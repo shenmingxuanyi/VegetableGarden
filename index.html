@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>菜户头</title>
+    <meta charset="utf-8">
+    <!--禁止缩放，更像原生-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 滑动 -->
+    <link rel="stylesheet" href="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.css">
+    <!--自定义样式-->
+    <link rel='stylesheet' href='./stylesheets/style.css'/>
+    <style rel="stylesheet">
+        html, body {
+            background-color: #e1e1e1;
+        }
+
+        .swiper-container {
+            width: 100vw;
+            height: 50vw;
+        }
+
+        #home-banner {
+            margin-top: 50px;
+        }
+
+        #home-banner .home-banner-image {
+            width: 100%;
+            height: 100%;
+        }
+
+        .padding {
+            margin-top: 10px;
+        }
+
+        .home-recommend {
+            background-color: #fff;
+        }
+
+        .home-recommend .home-recommend-image {
+            border: 3px solid #e1e1e1;
+            background-color: #e1e1e1;
+            padding: 5px;
+        }
+
+        .home-recommend-image:active {
+            background-color: #fff;
+            border: 3px solid #c1e2b3;
+            box-shadow: 0 0 5px #c1e2b3;
+            -webkit-transition: box-shadow 100ms;
+            -moz-transition: box-shadow 100ms;
+            -ms-transition: box-shadow 100ms;
+            -o-transition: box-shadow 100ms;
+            transition: box-shadow 100ms;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .home-options {
+            /*background-color: #fff;*/
+        }
+
+        .home-options .option {
+            background-color: #fff;
+            display: block;
+        }
+
+        .home-options .option .option-title {
+            background-color: #fff;
+        }
+
+        .home-options .option:active,
+        .home-options .option:active .option-title {
+            background-color: #fafafa;
+        }
+
+        .navbar-header {
+            background-color: #4aab44;
+            border-bottom: none;
+        }
+
+        .navbar-header .title {
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top navbar-header ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6"><p class="navbar-text text-center title">常用采购</p></div>
+            <div class="col-xs-3"></div>
+        </div>
+
+    </div>
+</header>
+
+<section class="swiper-container" id="home-banner">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="home-banner-image" src="./images/home/banner/banner1.jpg"></div>
+        <div class="swiper-slide"><img class="home-banner-image" src="./images/home/banner/banner2.jpg"></div>
+        <div class="swiper-slide"><img class="home-banner-image" src="./images/home/banner/banner3.jpg"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</section>
+
+<section class="padding"></section>
+
+<section class="home-recommend">
+    <div style="text-align: center;position: relative;padding: 10px;">
+        <div style="position: absolute;border-bottom: 1px solid #e1e1e1;left: 10px;right: 10px;top: 20px;z-index: 0;"></div>
+        <span style="position: relative;padding: 0 10px;display: inline-block;background-color: #fff;z-index: 2;font-weight: bold;">我要下单</span>
+        <div style="text-align: center;">
+            <span style="color:#cecece;font-size:12px;">最全的菜品分类</span>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="padding-bottom: 10px;">
+        <div class="row">
+            <div class="col-xs-3 text-center" style="text-align: center;padding: 0 10px;">
+                <img class="img-responsive img-circle home-recommend-image" src="images/vegetables/v (2).png">
+            </div>
+            <div class="col-xs-3 text-center" style="text-align: center;padding: 0 10px;">
+                <img class="img-responsive img-circle home-recommend-image" src="images/vegetables/v (4).png">
+            </div>
+            <div class="col-xs-3 text-center" style="text-align: center;padding: 0 10px;">
+                <img class="img-responsive img-circle home-recommend-image" src="images/vegetables/v (6).png">
+            </div>
+            <div class="col-xs-3 text-center" style="text-align: center;padding: 0 10px;">
+                <img class="img-responsive img-circle home-recommend-image" src="images/vegetables/v (8).png">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="padding"></section>
+
+<section class="home-options">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-6" style="padding-left: 0;padding-right: 5px;">
+                <div class="option text-center">
+                    <div style="text-align: center;position: relative;padding: 10px;">
+                        <div style="position: absolute;border-bottom: 1px solid #e1e1e1;left: 10px;right: 10px;top: 20px;z-index: 0;"></div>
+                        <span class="option-title"
+                              style="position: relative;padding: 0 10px;display: inline-block;z-index: 2;font-weight: bold;">常用采购</span>
+                        <div style="text-align: center;">
+                            <span style="color:#cecece;font-size:12px;">您经常采购的商品</span>
+                        </div>
+                    </div>
+                    <img class="img-responsive" style="width: 100%;height: auto;" src="images/home/option/dingdan.png">
+                </div>
+            </div>
+            <div class="col-xs-6 " style="padding-left: 5px;padding-right: 0;">
+                <div class="option text-center">
+                    <div style="text-align: center;position: relative;padding: 10px;">
+                        <div style="position: absolute;border-bottom: 1px solid #e1e1e1;left: 10px;right: 10px;top: 20px;z-index: 0;"></div>
+                        <span class="option-title"
+                              style="position: relative;padding: 0 10px;display: inline-block;z-index: 2;font-weight: bold;">我的订单</span>
+                        <div style="text-align: center;">
+                            <span style="color:#cecece;font-size:12px;">订单状态尽在掌握</span>
+                        </div>
+                    </div>
+                    <img class="img-responsive" style="width: 100%;height: auto;" src="images/home/option/caigou.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="./lib/jQuery/1.12.3/jquery-1.12.3.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./lib/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- 滑动 -->
+<script src="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.js"></script>
+
+<script>
+
+    $(function () {
+
+        $('#home-banner').swiper({
+            pagination: '#home-banner .swiper-pagination',
+            paginationClickable: true
+        });
+
+
+    });
+
+</script>
+</html>

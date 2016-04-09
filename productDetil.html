@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>产品详情</title>
+    <meta charset="utf-8">
+    <!--禁止缩放，更像原生-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 滑动 -->
+    <link rel="stylesheet" href="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.css">
+    <!--自定义样式-->
+    <link rel='stylesheet' href='./stylesheets/style.css'/>
+    <style rel="stylesheet">
+
+        .swiper-container {
+            width: 100vw;
+            height: 75vw;
+        }
+
+        #product-banner {
+            margin-top: 50px;
+        }
+
+        #product-banner .product-banner-image {
+            width: 100%;
+            height: 100%;
+        }
+
+        .padding {
+            margin-top: 10px;
+        }
+
+        .product-introduce {
+            background-color: #fff;
+        }
+
+        .product-introduce .product-introduce-image {
+            border: 3px solid #e1e1e1;
+            background-color: #e1e1e1;
+            padding: 5px;
+        }
+
+        .navbar-header {
+            background-color: #4aab44;
+            border-bottom: none;
+        }
+
+        .navbar-header .title {
+            color: #fff;
+        }
+
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-bold {
+            font-weight: bold;
+        }
+
+        .btn.btn-circle {
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            border-radius: 16px;
+        }
+
+        .introduce-price .form-control {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<header class="navbar navbar-default navbar-fixed-top navbar-header ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6"><p class="navbar-text text-center title">产品详情</p></div>
+            <div class="col-xs-3"></div>
+        </div>
+
+    </div>
+</header>
+<section class="swiper-container" id="product-banner">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img class="product-banner-image" src="./images/product/banner/banner1.jpg"></div>
+        <div class="swiper-slide"><img class="product-banner-image" src="./images/product/banner/banner2.jpg"></div>
+        <div class="swiper-slide"><img class="product-banner-image" src="./images/product/banner/banner3.jpg"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</section>
+
+<section class="product-introduce">
+    <div class="introduce-title container-fluid">
+        <span class="text-bold" style="line-height: 30px;">有机西红柿</span>
+    </div>
+    <div style="border-bottom: 1px solid #e1e1e1;"></div>
+    <div class="introduce-desc container-fluid" style="line-height: 30px;">
+        <span class="text-muted">新鲜的、晨起采摘</span>
+        <span class="text-bold" style="color:rgb(92,184,92);margin: 10px 0;">两斤2.4元</span>
+    </div>
+    <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+        <div class="row">
+            <div class="col-xs-6 col-sm-9">
+                <span style="color: #e76704;" class="text-bold">￥</span>
+                <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                <span style="color: #e1e1e1;">/斤</span>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="input-group" style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                    <input value="1" type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="padding"></section>
+
+<footer class="navbar-fixed-bottom" style="background-color:#e1e1e1;">
+
+    <div class="container" style="padding: 10px 10px;">
+        <button class="btn btn-success btn-block btn-circle"><i class="glyphicon glyphicon glyphicon-shopping-cart"></i>加入购物车
+        </button>
+    </div>
+
+</footer>
+
+</body>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="./lib/jQuery/1.12.3/jquery-1.12.3.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./lib/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- 滑动 -->
+<script src="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.js"></script>
+
+<script>
+
+    $(function () {
+
+        $('#product-banner').swiper({
+            pagination: '#product-banner .swiper-pagination',
+            paginationClickable: true
+        });
+
+
+    });
+
+</script>
+</html>

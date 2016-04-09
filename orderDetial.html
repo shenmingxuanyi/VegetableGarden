@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>菜户头</title>
+    <meta charset="utf-8">
+    <!--禁止缩放，更像原生-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 滑动 -->
+    <link rel="stylesheet" href="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.css">
+    <!--自定义样式-->
+    <link rel='stylesheet' href='./stylesheets/style.css'/>
+    <style rel="stylesheet">
+        html, body {
+            background: #e1e1e1;
+        }
+
+        .product-order {
+            background-color: #fff9c9;
+            /*border-bottom: 1px solid #e1e1e1;*/
+            box-shadow: 0 2px 6px #e1e1e1;
+        }
+
+        .navbar-header {
+            background-color: #4aab44;
+            border-bottom: none;
+        }
+
+        .navbar-header .title {
+            color: #fff;
+        }
+
+        .order-items {
+            background-color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .order-items .item {
+            font-size: 16px;;
+            line-height: 36px;
+        }
+
+        .order-items .item:not(:last-child) {
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top navbar-header ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6"><p class="navbar-text text-center title">订单详情</p></div>
+            <div class="col-xs-3"></div>
+        </div>
+    </div>
+
+    <div class="product-order container-fluid">
+        <div style="line-height: 44px;font-weight: bold;">
+            <span>共<span style="color: #fe8e20;padding: 0 5px;">2</span>样菜品</span>
+            <span style="margin-left: 10px;">应付金额：</span>
+            <span style="color: #fe8e20;">20元</span>
+            <span style="float: right">
+                <button class="btn btn-success btn-circle btn-sm">去结算</button>
+            </span>
+        </div>
+        <div style="line-height: 24px;color: #666;">
+            <span>发货总额：220元</span>
+            <span>退货总额：220元</span>
+        </div>
+    </div>
+</header>
+<div style="margin-top: 119px;"></div>
+<section class="order-items">
+    <div class="item">
+        <div class="container-fluid">
+            <span class="text-left">大白菜</span>
+            <span class="text-right" style="float: right">单价：1.2/斤</span>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="item" style="color: #999;">
+            <span class="text-left">订货</span>
+            <span class="text-right" style="float: right">30斤</span>
+        </div>
+        <div class="item" style="color: #999;">
+            <span class="text-left">发货</span>
+            <span class="text-right" style="float: right">30斤</span>
+        </div>
+        <div class="item" style="color: #999;">
+            <span class="text-left">退货</span>
+            <span class="text-right" style="float: right">0斤</span>
+        </div>
+    </div>
+    <div class="item" style="border-top: 1px solid #e1e1e1;">
+        <div class="container-fluid">
+            <span class="text-left">应付</span>
+            <span class="text-right" style="float: right;font-weight: bold;color: #fe8e20;">￥99.80元</span>
+        </div>
+    </div>
+
+</section>
+<section class="order-items">
+    <div class="item">
+        <div class="container-fluid">
+            <span class="text-left">大白菜</span>
+            <span class="text-right" style="float: right">单价：1.2/斤</span>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="item" style="color: #999;">
+            <span class="text-left">订货</span>
+            <span class="text-right" style="float: right">30斤</span>
+        </div>
+        <div class="item" style="color: #999;">
+            <span class="text-left">发货</span>
+            <span class="text-right" style="float: right">30斤</span>
+        </div>
+        <div class="item" style="color: #999;">
+            <span class="text-left">退货</span>
+            <span class="text-right" style="float: right">0斤</span>
+        </div>
+    </div>
+    <div class="item" style="border-top: 1px solid #e1e1e1;">
+        <div class="container-fluid">
+            <span class="text-left">应付</span>
+            <span class="text-right" style="float: right;font-weight: bold;color: #fe8e20;">￥99.80元</span>
+        </div>
+    </div>
+
+</section>
+<section class="order-items">
+    <div class="item">
+        <div class="container-fluid">
+            <span class="text-left">大白菜</span>
+            <span class="text-right" style="float: right">单价：1.2/斤</span>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="item" style="color: #999;">
+            <span class="text-left">订货</span>
+            <span class="text-right" style="float: right">30斤</span>
+        </div>
+        <div class="item" style="color: #999;">
+            <span class="text-left">发货</span>
+            <span class="text-right" style="float: right">30斤</span>
+        </div>
+        <div class="item" style="color: #999;">
+            <span class="text-left">退货</span>
+            <span class="text-right" style="float: right">0斤</span>
+        </div>
+    </div>
+    <div class="item" style="border-top: 1px solid #e1e1e1;">
+        <div class="container-fluid">
+            <span class="text-left">应付</span>
+            <span class="text-right" style="float: right;font-weight: bold;color: #fe8e20;">￥99.80元</span>
+        </div>
+    </div>
+
+</section>
+</body>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="./lib/jQuery/1.12.3/jquery-1.12.3.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./lib/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- 滑动 -->
+<script src="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.js"></script>
+
+<script>
+
+    $(function () {
+
+        $('#home-banner').swiper({
+            pagination: '#home-banner .swiper-pagination',
+            paginationClickable: true
+        });
+
+
+    });
+
+</script>
+</html>

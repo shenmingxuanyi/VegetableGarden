@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>菜户头</title>
+    <meta charset="utf-8">
+    <!--禁止缩放，更像原生-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 滑动 -->
+    <link rel="stylesheet" href="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.css">
+    <!--自定义样式-->
+    <link rel='stylesheet' href='./stylesheets/style.css'/>
+    <style rel="stylesheet">
+
+        .navbar-header {
+            background-color: #4aab44;
+        }
+
+        .navbar-header .title {
+            color: #fff;
+        }
+
+        html, body {
+            background: #e1e1e1;
+        }
+
+        .products {
+            margin-top: 90px;
+        }
+
+        .product-item {
+            background-color: #fff;
+            padding: 10px;
+            height: 120px;
+        }
+
+        .product-item:not(:last-child) {
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .product-item img {
+            margin-top: 10px;
+        }
+
+        .text-bold {
+            font-weight: bold;
+        }
+
+        .button-bar {
+            padding: 5px 10px;
+            background-color: #e1e1e1;
+            white-space: nowrap;
+            overflow-y: hidden;
+            overflow-x: scroll;
+
+            -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+        }
+
+        .button-bar .btn {
+            margin-left: 5px;
+            margin-right: 5px;
+            -webkit-border-radius: 16px;
+            -moz-border-radius: 16px;
+            border-radius: 16px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .product-search.input-group {
+            background-color: #74be6f;
+            border-radius: 5px;
+        }
+
+        .product-search.input-group input.form-control,
+        .product-search.input-group .input-group-addon {
+            background-color: transparent;
+            color: #fff;
+            border: none;
+        }
+
+        .product-search.input-group .input-group-addon {
+
+        }
+
+        .product-search.input-group input.form-control::-moz-placeholder {
+            color: #fff;
+            opacity: 1;
+        }
+
+        .product-search.input-group input.form-control:-ms-input-placeholder {
+            color: #fff;
+        }
+
+        .product-search.input-group input.form-control::-webkit-input-placeholder {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top navbar-header ">
+    <div class="container-fluid" style="height: 50px;">
+        <div class="input-group product-search" style="margin-top: 8px;">
+            <input type="text" class="form-control" placeholder="输入查询信息" aria-describedby="basic-addon">
+            <span class="input-group-addon" id="basic-addon"><i class="glyphicon glyphicon-search"></i></span>
+        </div>
+    </div>
+    <div class="button-bar">
+        <button class="btn btn-sm btn-success">叶菜</button>
+        <button class="btn btn-sm btn-success">花菜</button>
+        <button class="btn btn-sm btn-success">水果</button>
+        <button class="btn btn-sm btn-success">瓜果</button>
+        <button class="btn btn-sm btn-success">豆子</button>
+        <button class="btn btn-sm btn-success">葱姜蒜</button>
+        <button class="btn btn-sm btn-success">蔬菜</button>
+        <button class="btn btn-sm btn-success">蔬菜</button>
+    </div>
+</header>
+
+<section class="products">
+
+    <div class="product-introduce">
+
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (1).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (2).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (3).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (4).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (5).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (1).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (2).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (3).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (4).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+        <div class="product-item" style="position: relative;">
+            <span style="display: inline-block">
+                <img src="./images/vegetables/v (5).png" style="width: 80px;height: 80px;">
+            </span>
+            <span style="display: inline-block;position: absolute;right: 0;left: 80px;">
+                <div class="introduce-title container-fluid">
+                    <span style="line-height: 30px;font-weight: bold;">有机西红柿</span>
+                     <span style="line-height: 30px;font-weight: bold;float: right;">
+                        <i class="glyphicon glyphicon-trash"></i>
+                    </span>
+                </div>
+                <div class="introduce-desc container-fluid"
+                     style="line-height: 25px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;">
+                    <span class="text-muted" style="font-size:10px;">新鲜的、晨起采摘</span>
+                    <span class="text-bold" style="font-size:10px;color:#4aab44;margin: 10px 0;">两斤2.4元</span>
+                </div>
+                <div class="introduce-price container-fluid" style="margin-top: 10px;">
+
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-9" style="padding-right: 5px;">
+                            <span style="color: #e76704;" class="text-bold">￥</span>
+                            <span style="color: #e76704;font-size: 24px;" class="text-bold">1.2</span>
+                            <span style="color: #e1e1e1;">/斤</span>
+                        </div>
+                        <div class="col-xs-6 col-sm-3" style="padding-left: 5px;">
+                            <div class="input-group input-group-sm"
+                                 style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                        <i class="glyphicon glyphicon glyphicon-minus"></i>
+                    </span>
+                                <input type="text" value="1" style="text-align:center;" class="form-control"
+                                       aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-addon"
+                          style="-webkit-border-radius: 0px;-moz-border-radius: 0px;border-radius: 0px;">
+                         <i class="glyphicon glyphicon glyphicon-plus"></i>
+                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+
+
+</section>
+
+</body>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="./lib/jQuery/1.12.3/jquery-1.12.3.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./lib/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- 滑动 -->
+<script src="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.js"></script>
+
+<script>
+
+    $(function () {
+
+        $('#home-banner').swiper({
+            pagination: '#home-banner .swiper-pagination',
+            paginationClickable: true
+        });
+
+
+    });
+
+</script>
+</html>

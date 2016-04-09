@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>菜户头</title>
+    <meta charset="utf-8">
+    <!--禁止缩放，更像原生-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="./lib/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 滑动 -->
+    <link rel="stylesheet" href="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.css">
+    <!--自定义样式-->
+    <link rel='stylesheet' href='./stylesheets/style.css'/>
+    <style rel="stylesheet">
+        html, body {
+            background: #e1e1e1;
+        }
+
+        .navbar-header {
+            background-color: #4aab44;
+            border-bottom: none;
+        }
+
+        .navbar-header .title {
+            color: #fff;
+        }
+
+        .order-items {
+            background-color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .order-items .item {
+            font-size: 16px;;
+            line-height: 36px;
+        }
+
+        .order-items .item:not(:last-child) {
+            border-bottom: 1px solid #e1e1e1;
+        }
+
+        .btn-group.tabs {
+            border: none;
+            border-radius: 0;
+        }
+
+        .btn-group.tabs .btn {
+            border: none;
+            border-radius: 0;
+            color: #4aab44;
+            border-bottom: 2px solid #fff;
+        }
+
+        .btn-group.tabs .btn:active,
+        .btn-group.tabs .btn:hover,
+        .btn-group.tabs .btn:focus,
+        .btn-group.tabs .btn.active {
+            background-color: #fff;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            border-bottom: 2px solid #4aab44;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top navbar-header ">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3"></div>
+            <div class="col-xs-6"><p class="navbar-text text-center title">我的订单</p></div>
+            <div class="col-xs-3"></div>
+        </div>
+    </div>
+    <div id="tabs" class="btn-group btn-group-lg btn-group-justified tabs" role="group">
+        <div class="btn-group btn-group-lg" role="group">
+            <span class="btn btn-default" data-tab-section="#weifukuan">未付款</span>
+        </div>
+        <div class="btn-group btn-group-lg" role="group">
+            <span class="btn btn-default" data-tab-section="#yifukuan">已付款</span>
+        </div>
+    </div>
+</header>
+<div style="margin-top: 105px;"></div>
+
+<article id="weifukuan" style="display: none;">
+    <section class="order-items">
+        <div class="item">
+            <div class="container-fluid">
+                <span class="text-left" style="font-weight: bold;">子账户：北京饭店</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="item" style="color: #999;">
+                <span class="text-left">2016-03-20 12:24:36</span>
+                <span class="text-right" style="float: right;font-weight: bold;color: #fe8e20;">待付款</span>
+            </div>
+            <div class="item" style="color: #999;">
+                <span class="text-left">共10中菜品</span>
+                <span class="text-right" style="float: right">详情<i class="glyphicon glyphicon-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="item" style="border-top: 1px solid #e1e1e1;">
+            <div class="container-fluid" style="font-weight: bold;">
+                <span class="text-left">订单总额</span>
+                <span class="text-right" style="float: right;color: #fe8e20;">￥399.80元</span>
+            </div>
+        </div>
+
+    </section>
+    <section class="order-items">
+        <div class="item">
+            <div class="container-fluid">
+                <span class="text-left" style="font-weight: bold;">子账户：北京饭店</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="item" style="color: #999;">
+                <span class="text-left">2016-03-20 12:24:36</span>
+                <span class="text-right" style="float: right;font-weight: bold;color: #fe8e20;">待付款</span>
+            </div>
+            <div class="item" style="color: #999;">
+                <span class="text-left">共10中菜品</span>
+                <span class="text-right" style="float: right">详情<i class="glyphicon glyphicon-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="item" style="border-top: 1px solid #e1e1e1;">
+            <div class="container-fluid" style="font-weight: bold;">
+                <span class="text-left">订单总额</span>
+                <span class="text-right" style="float: right;color: #fe8e20;">￥399.80元</span>
+            </div>
+        </div>
+
+    </section>
+</article>
+
+<article id="yifukuan" style="display: none;">
+    <section class="order-items">
+        <div class="item">
+            <div class="container-fluid">
+                <span class="text-left" style="font-weight: bold;">子账户：北京饭店</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="item" style="color: #999;">
+                <span class="text-left">2016-03-20 12:24:36</span>
+                <span class="text-right" style="float: right;font-weight: bold;color: #4aab44;">已发货</span>
+            </div>
+            <div class="item" style="color: #999;">
+                <span class="text-left">共10中菜品</span>
+                <span class="text-right" style="float: right">详情<i class="glyphicon glyphicon-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="item" style="border-top: 1px solid #e1e1e1;">
+            <div class="container-fluid" style="font-weight: bold;">
+                <span class="text-left">订单总额</span>
+                <span class="text-right" style="float: right;color: #fe8e20;">￥399.80元</span>
+            </div>
+        </div>
+
+    </section>
+    <section class="order-items">
+        <div class="item">
+            <div class="container-fluid">
+                <span class="text-left" style="font-weight: bold;">子账户：北京饭店</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="item" style="color: #999;">
+                <span class="text-left">2016-03-20 12:24:36</span>
+                <span class="text-right" style="float: right;font-weight: bold;color: #4aab44;">已发货</span>
+            </div>
+            <div class="item" style="color: #999;">
+                <span class="text-left">共10中菜品</span>
+                <span class="text-right" style="float: right">详情<i class="glyphicon glyphicon-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="item" style="border-top: 1px solid #e1e1e1;">
+            <div class="container-fluid" style="font-weight: bold;">
+                <span class="text-left">订单总额</span>
+                <span class="text-right" style="float: right;color: #fe8e20;">￥399.80元</span>
+            </div>
+        </div>
+
+    </section>
+    <section class="order-items">
+        <div class="item">
+            <div class="container-fluid">
+                <span class="text-left" style="font-weight: bold;">子账户：北京饭店</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="item" style="color: #999;">
+                <span class="text-left">2016-03-20 12:24:36</span>
+                <span class="text-right" style="float: right;font-weight: bold;color: #4aab44;">已发货</span>
+            </div>
+            <div class="item" style="color: #999;">
+                <span class="text-left">共10中菜品</span>
+                <span class="text-right" style="float: right">详情<i class="glyphicon glyphicon-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="item" style="border-top: 1px solid #e1e1e1;">
+            <div class="container-fluid" style="font-weight: bold;">
+                <span class="text-left">订单总额</span>
+                <span class="text-right" style="float: right;color: #fe8e20;">￥399.80元</span>
+            </div>
+        </div>
+
+    </section>
+    <section class="order-items">
+        <div class="item">
+            <div class="container-fluid">
+                <span class="text-left" style="font-weight: bold;">子账户：北京饭店</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="item" style="color: #999;">
+                <span class="text-left">2016-03-20 12:24:36</span>
+                <span class="text-right" style="float: right;font-weight: bold;color: #4aab44;">已发货</span>
+            </div>
+            <div class="item" style="color: #999;">
+                <span class="text-left">共10中菜品</span>
+                <span class="text-right" style="float: right">详情<i class="glyphicon glyphicon-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="item" style="border-top: 1px solid #e1e1e1;">
+            <div class="container-fluid" style="font-weight: bold;">
+                <span class="text-left">订单总额</span>
+                <span class="text-right" style="float: right;color: #fe8e20;">￥399.80元</span>
+            </div>
+        </div>
+
+    </section>
+</article>
+
+</body>
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="./lib/jQuery/1.12.3/jquery-1.12.3.min.js"></script>
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="./lib/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<!-- 滑动 -->
+<script src="./lib/amazeui/amazeui.swiper/0.0.3/amazeui.swiper.js"></script>
+
+<script>
+
+    $(function () {
+
+        $("#tabs .btn").click(function (e) {
+            if ($("#tabs .btn.active").size()) {
+                if ($("#tabs .btn.active")[0].dataset.tabSection == $(this)[0].dataset.tabSection) {
+                    return;
+                }
+                $($("#tabs .btn.active")[0].dataset.tabSection).hide();
+                $("#tabs .btn.active").removeClass("active");
+            }
+            $(this).addClass("active");
+            $($(this)[0].dataset.tabSection).show();
+
+        });
+
+        $("#tabs .btn-group:first-child .btn").click();
+
+    });
+
+</script>
+</html>
